@@ -65,8 +65,6 @@ let createElement = (~basepath="/", ~children, ()) => {
         ),
       children,
     ),
-    "/",
-    (_, _, _) => {()},
     update => {
       let history =
         History.createBrowserHistory(
@@ -110,5 +108,6 @@ let createElement = (~basepath="/", ~children, ()) => {
       resolve(BrowserHistory.location(history));
       ();
     },
+    (_, _, _) => {()},
   );
 };
