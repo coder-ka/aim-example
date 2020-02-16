@@ -3,7 +3,7 @@ open Elements;
 
 let increment = count => count + 1;
 
-type mutations =
+type actions =
   | Increment;
 
 let createElement = (~children, ()) => {
@@ -17,8 +17,8 @@ let createElement = (~children, ()) => {
       </div>
     </>,
     update => update(0),
-    (update, mutation, count) => {
-      switch (mutation) {
+    (action, update, count) => {
+      switch (action) {
       | Increment => update(count + 1)
       }
     },

@@ -35,7 +35,7 @@ module History = {
     "createBrowserHistory";
 };
 
-type mutations =
+type actions =
   | RouteChanged(string);
 
 let current = ref(None);
