@@ -1,0 +1,24 @@
+{
+  "name": "aim-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "re:dev": "bsb -make-world -clean-world -w",
+    "dev": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bs-platform": "^7.1.1",
+    "bsb-js": "^1.1.7",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "@coder-ka/aim": "^0.2.3",
+    "bs-webapi": "^0.15.7",
+    "history": "^4.10.1"
+  }
+}
